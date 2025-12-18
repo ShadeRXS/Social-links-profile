@@ -1,0 +1,143 @@
+/* Import external font from Google Fonts */
+@import url("https://fonts.google.com/specimen/Inter");
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body page styles */
+body {
+  background-color: var(--color-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* Color variables */
+:root {
+  --color-button-bg: hsl(0, 0%, 20%);
+  --color-card-bg: hsl(0, 0%, 12%);
+  --color-bg: hsl(0, 0%, 8%);
+  --color-highlight: hsl(75, 94%, 57%);
+  --color-text: hsl(0, 0%, 100%);
+  --color-text-dark: hsla(0, 0%, 0%, 1);
+}
+
+/* Profile card styles */
+.profile-card {
+  background-color: var(--color-card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 384px;
+  height: auto;
+}
+
+/* Profile image styles */
+.profile-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+/* User information styles */
+.user-info h1 {
+  color: var(--color-text);
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* User location styles */
+.user-info p {
+  color: var(--color-highlight);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* User text styles */
+.user-text {
+  color: var(--color-text);
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+/* Social links styles */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual social link styles */
+.social-links a {
+  background-color: var(--color-button-bg);
+  color: var(--color-text);
+  text-decoration: none;
+
+  padding: 14px;
+  border-radius: 10px;
+
+  text-align: center;
+  font-weight: 600;
+
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+  background-color: var(--color-highlight);
+  cursor: pointer;
+  color: var(--color-text-dark);
+}
+
+/* Attribution styles */
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+  color: var(--color-text);
+}
+.attribution a {
+  color: var(--color-text);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 384px;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .social-links a {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 375px) {
+  .profile-card {
+    padding: 1rem;
+    width: 300px;
+    height: auto;
+  }
+
+  .social-links a {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
